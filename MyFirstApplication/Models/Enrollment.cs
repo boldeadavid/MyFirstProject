@@ -5,11 +5,11 @@ using System.Web;
 
 namespace MyFirstApplication.Models
 {
-    public class Course
+    public class Enrollment
     {
+        public int EnrollmentId { get; set; }
         public int CourseId { get; set; }
-        public string CourseName { get; set; }
-        public int TotalCredits { get; set; }
-        public ICollection<Enrollment> Enrollments { get; set; }
+        public int StudentId { get; set; }
+        public decimal? Grade { get; set; }
     }
 }
